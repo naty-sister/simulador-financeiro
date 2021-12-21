@@ -1,1 +1,1 @@
-projeto desenvolvido para segunda fase da trilha front-end
+projeto desenvolvido para segunda fase da trilha front-end.
