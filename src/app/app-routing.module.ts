@@ -1,18 +1,13 @@
-import { HomeComponent } from './../../../../natyfitness/src/app/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BidderComponent } from './pages/bidder/bidder.component';
-import { ImmobileComponent } from './pages/immobile/immobile.component';
-import { StatusComponent } from './pages/status/status.component';
 
 const routes: Routes = [
-  {path:'', component: HomeComponent},
-  {path: 'bidder', component: BidderComponent},
-  {path: 'immobile', component: ImmobileComponent},
-  {path: 'status', component: StatusComponent},
-
-
+  {path: '', loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule)},
+  {path:'', loadChildren: () => import('./pages/bidder/bidder.module').then(m => m.BidderModule)},
+  {path:'', loadChildren: () => import('./pages/immobile/immobile.module').then(m => m.ImmobileModule)},
+  {path:'', loadChildren: () => import('./pages/status/status.module').then(m => m.StatusModule)},
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

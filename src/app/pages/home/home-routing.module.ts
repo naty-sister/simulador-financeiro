@@ -1,9 +1,9 @@
-import { HomeComponent } from './../../../../../../natyfitness/src/app/home/home.component';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home.component';
 
 const routes: Routes = [
-
+  {path:'', component: HomeComponent},
 ];
 
 @NgModule({

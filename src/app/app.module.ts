@@ -13,7 +13,6 @@ import { StatusComponent } from './pages/status/status.component';
 
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +28,7 @@ import { StatusComponent } from './pages/status/status.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSliderModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
