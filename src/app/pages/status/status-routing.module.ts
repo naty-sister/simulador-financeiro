@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { StatusComponent } from './status.component';
+import { AprovadoComponent } from './aprovado.component';
+import { ReprovadoComponent } from './reprovado.component';
 
 const routes: Routes = [
-  {path: 'status', component: StatusComponent},
+  {path: 'aprovado', component: AprovadoComponent},
+  {path: 'reprovado', component: ReprovadoComponent},
 
 ];
 

@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BidderComponent } from './bidder.component';
-
+import {FormularioComponent} from './FormularioComponent';
 const routes: Routes = [
-  {path: 'bidder', component: BidderComponent},
+ {path:'', component: FormularioComponent} 
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class BidderRoutingModule { }
+export class ImovelRoutingModule { }
